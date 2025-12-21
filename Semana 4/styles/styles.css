@@ -1,0 +1,44 @@
+
+body {
+    background: linear-gradient(135deg, #fac6a8bd, #b3cecc);
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.card {
+    border-radius: 15px;
+    transition: transform 0.5s ease, box-shadow 0.5s ease;
+}
+
+.card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.2);
+}
+
+.card-text {
+    font-style: italic;
+
+}
+.card-img-top {
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+.imagen-header {
+    max-width: 600px;
+    border-radius: 20px;
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+@media (max-width: 760px) { 
+    body { 
+        background-color: lightblue; font-size: 14px; 
+    } 
+
+    h1 {
+        color: #003104;
+    }
+    
+}
+
+
+
