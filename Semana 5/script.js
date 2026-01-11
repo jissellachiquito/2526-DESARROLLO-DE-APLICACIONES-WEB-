@@ -1,16 +1,19 @@
-
+// Traer lo elementos del DOM
 const input = document.getElementById("imageUrl");
 const addBtn = document.getElementById("addImage");
 const deleteBtn = document.getElementById("deleteImage");
-const gallery = document.getElementById("gallery");
+const gallery = document.getElementById("galeria");
 
 let selectedImage = null;
 
 // Agregar imagen
 addBtn.addEventListener("click", () => {
   const url = input.value.trim();
-  if (url === "") return;
 
+  if (url === "") {
+    alert( "Pega una URL valida");
+    return;
+}
   const img = document.createElement("img");
   img.src = url;
 
@@ -36,7 +39,7 @@ deleteBtn.addEventListener("click", () => {
 
 // Evento input
 input.addEventListener("input", () => {
-  // Se puede usar para validar en tiempo real si se desea
+  
 });
 
 // Atajos de teclado
