@@ -1,0 +1,71 @@
+body {
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  padding: 20px;
+  background: #a1e2ee;
+}
+
+h1 {
+  text-align: center;
+  background-color: rgb(0, 255, 213);
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+p{
+  text-align: center;
+}
+
+.controls {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+}
+
+input {
+  padding: 8px;
+  width: 300px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+button {
+  padding: 8px 12px;
+  cursor: pointer;
+  border: none;
+  background: #6de2bf;
+  color: rgb(0, 0, 0);
+  border-radius: 10px;
+  font-weight: 500;
+  transition: background 0.3s, transform 0.2s;
+
+}
+
+button:hover {
+  background: #6de2bf;
+  transform: scale(1.05);
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  gap: 15px;
+}
+
+.gallery img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  cursor: pointer;
+  border-radius: 10px;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.gallery img:hover {
+  transform: scale(1.05);
+}
+
+.selected {
+  box-shadow: 0 0 0 5px #02033d;
+  transform: scale(1.05);
+}
