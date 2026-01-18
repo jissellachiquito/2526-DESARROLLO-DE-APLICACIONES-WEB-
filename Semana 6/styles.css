@@ -1,0 +1,155 @@
+* {
+  margin: 10;
+  padding: 30;
+  box-sizing: border-box;
+}
+
+body {
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  background: linear-gradient(135deg, #aebdfd 0%, #ad82d8 100%);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.container {
+  background: rgb(245, 199, 199);
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+  padding: 40px;
+  width: 100%;
+  max-width: 500px;
+}
+
+h1 {
+  text-align: center;
+  color: #222121;
+  margin-bottom: 30px;
+  font-size: 28px;
+  font-weight: 600;
+}
+
+.form-group {
+  margin-bottom: 25px;
+  position: relative;
+}
+
+label {
+  display: block;
+  margin-bottom: 8px;
+  color: #222222;
+  font-weight: 500;
+  font-size: 14px;
+}
+
+input {
+  width: 100%;
+  padding: 12px 15px;
+  border: 1px solid #025379;
+  border-radius: 8px;
+  font-size: 16px;
+  transition: all 0.3s ease;
+  outline: none;
+}
+
+input:focus {
+  border-color: #e9e5e5;
+  box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
+}
+
+input.valid {
+  border-color: #28a745;
+  background-color: #f8fff9;
+}
+
+input.invalid {
+  border-color: #dc3545;
+  background-color: #fff8f8;
+}
+
+.error-message {
+  color: #ff0019;
+  font-size: 12px;
+  margin-top: 5px;
+  display: none;
+}
+
+.error-message.show {
+  display: block;
+}
+
+.password-requirements {
+  font-size: 11px;
+  color: #660000;
+  margin-top: 5px;
+  line-height: 1.4;
+}
+
+.password-requirements span {
+  display: block;
+  margin: 2px 0;
+}
+
+.password-requirements.valid {
+  color: #28a745;
+}
+
+.button-group {
+  display: flex;
+  gap: 15px;
+  margin-top: 30px;
+}
+
+button {
+  flex: 1;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+#submitBtn {
+  background: linear-gradient(135deg, #0c76a7 0%, #cfa0ff 100%);
+  color: white;
+}
+
+#submitBtn:disabled {
+  background: #ccc;
+  cursor: not-allowed;
+  opacity: 0.7;
+}
+
+#submitBtn:not(:disabled):hover {
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(255, 233, 233, 0.4);
+}
+
+#resetBtn {
+  background: #f8f9fa;
+  color: #577691;
+  border: 2px solid #dee2e6;
+}
+
+#resetBtn:hover {
+  background: #5aa0e7a2;
+  border-color: #adb5bd;
+}
+
+.success-message {
+  background: #d4edda;
+  color: #155724;
+  padding: 15px;
+  border-radius: 8px;
+  margin-top: 20px;
+  text-align: center;
+  display: none;
+}
+
+.success-message.show {
+  display: block;
+}
