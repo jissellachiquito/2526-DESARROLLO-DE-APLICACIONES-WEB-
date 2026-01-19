@@ -114,7 +114,7 @@ button {
 }
 
 #submitBtn {
-  background: linear-gradient(135deg, #0c76a7 0%, #cfa0ff 100%);
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
   color: white;
 }
 
@@ -131,18 +131,18 @@ button {
 
 #resetBtn {
   background: #f8f9fa;
-  color: #577691;
+  color: #7b62e9;
   border: 2px solid #dee2e6;
 }
 
 #resetBtn:hover {
-  background: #5aa0e7a2;
+  background: #ffd6e7a2;
   border-color: #adb5bd;
 }
 
 .success-message {
-  background: #d4edda;
-  color: #155724;
+  background:linear-gradient;
+  color: #030303;
   padding: 15px;
   border-radius: 8px;
   margin-top: 20px;

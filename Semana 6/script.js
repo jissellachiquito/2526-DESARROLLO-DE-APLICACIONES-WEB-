@@ -1,5 +1,5 @@
 //elementos del DOM
-const form = document.getElementById('userForm');
+const form = document.getElementById('Formulario');
 const nombreInput = document.getElementById('nombre');
 const emailInput = document.getElementById('email');
 const passwordInput = document.getElementById('password');
